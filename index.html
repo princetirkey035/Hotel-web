@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Hotel</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff;}
+
+header{
+position:absolute;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+z-index:10;
+}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500;}
+.btn{
+background:#c9a14a;
+padding:10px 20px;
+border:none;
+color:#000;
+font-weight:600;
+border-radius:5px;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1566073771259-6a8506099945') center/cover;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+max-width:800px;
+}
+
+.booking{
+background:#c9a14a;
+padding:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+color:#000;
+}
+.booking input, .booking select{
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+.section{padding:80px 60px;}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+}
+.about img{width:50%;border-radius:10px;}
+.about h2{font-family:'Playfair Display';font-size:40px;margin-bottom:20px;}
+
+.gallery{display:flex;gap:15px;margin-top:30px;}
+.gallery img{width:20%;border-radius:10px;cursor:pointer;}
+
+.facilities{text-align:center;}
+.facility-box{display:flex;justify-content:space-around;margin-top:40px;}
+.box{width:22%;padding:20px;background:#111;border-radius:10px;}
+
+.map{display:flex;gap:30px;margin-top:50px;}
+.map img{width:70%;border-radius:10px;}
+.map .info{background:#c9a14a;color:#000;padding:20px;border-radius:10px;}
+
+.stats{
+background:#c9a14a;
+color:#000;
+display:flex;
+justify-content:space-around;
+padding:40px;
+}
+
+footer{
+background:#c9a14a;
+color:#000;
+padding:40px;
+display:flex;
+justify-content:space-around;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div>HOTEL</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Service</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<button class="btn">Booking</button>
+</header>
+
+<section class="hero">
+<h1>THE BEST LUXURY HOTEL IN INDIA</h1>
+<button class="btn" onclick="alert('Booking Started')">Register Now</button>
+</section>
+
+<div class="booking">
+<input type="date">
+<input type="date">
+<select><option>Room</option></select>
+<select><option>Adult</option></select>
+<select><option>Children</option></select>
+<button class="btn">Book Now</button>
+</div>
+
+<section class="section about">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+<div>
+<h2>WELCOME TO OUR BEST LUXURY ROOMS</h2>
+<p>Luxury hotel experience with modern comfort and premium services.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210f9" onclick="alert('Image Click')">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+<img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353">
+<img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7">
+</div>
+</section>
+
+<section class="section facilities">
+<h2>Hotel Facilities</h2>
+<div class="facility-box">
+<div class="box">Rooms & Suites</div>
+<div class="box">Free WiFi</div>
+<div class="box">Dinner</div>
+<div class="box">Swimming Pool</div>
+</div>
+</section>
+
+<section class="section map">
+<div class="info">
+<h3>Location & Maps</h3>
+<p>Paris City, France</p>
+<button class="btn" onclick="window.open('https://maps.google.com')">View Location</button>
+</div>
+<img src="https://images.unsplash.com/photo-1502920917128-1aa500764ce7">
+</section>
+
+<section class="stats">
+<div>70% Properties</div>
+<div>90% Satisfaction</div>
+<div>24/7 Support</div>
+</section>
+
+<footer>
+<div>Stay Connected</div>
+<div>Important Links</div>
+<div>Contact Info</div>
+</footer>
+
+</body>
+</html>
